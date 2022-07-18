@@ -2,7 +2,7 @@ from pymongo import MongoClient
 
 
 def get_client():
-    conn="mongodb+srv://root:root@cluster0.dh1xz.mongodb.net/test?authSource=admin&replicaSet=atlas-eutum0-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true"
+    conn=""
     client=MongoClient(conn)
     return client
 
