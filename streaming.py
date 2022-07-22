@@ -94,7 +94,7 @@ def get_stream(headers, set, bearer_token, MongoClient):
             data.append(json_response['data'])
 
 def start_streaming():
-    bearer_token = 'AAAAAAAAAAAAAAAAAAAAADBkYAEAAAAApAv29RWuU9J5ayq0w4CD7PUpv6A%3DIR1fH7suWwsnLhEnQkwWJI7yaYjkiA1iEmMNWX1BMk1yodTDw2'
+    bearer_token = ''
     headers = create_headers(bearer_token)
     rules = get_rules(headers, bearer_token)
     delete = delete_all_rules(headers, bearer_token, rules)
